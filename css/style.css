@@ -8,35 +8,35 @@
 
 /* Estilos principales para el reloj */
 aside .reloj{
-  width: 150px;
-  height: 100px;
+  width: 300px;
+  height: 200px;
   background: linear-gradient(to right, #0b1e36, #f128f1);
   color: #ffffff;
   text-align: center;
   padding-top: 12px;
-  margin: 15px auto;
+  margin: 25px auto;
   border-radius: 10px;
   border-bottom: 10px solid #190329;
   user-select: none;
   z-index: 1;
 }
 
-aside .reloj .dia{
-  font-size: 13px;
+aside #anuncio .reloj .dia{
+  font-size: 30px;
 }
 
-aside .reloj .mes{
-  font-size: 13px;
+aside #anuncio .reloj .mes{
+  font-size: 30px;
 }
 
-aside .reloj .hora{
+aside #anuncio .reloj .hora{
   display: flex;
   justify-content: center;
-  margin-top: 13px;
+  margin-top: 30px;
 }
 
-aside .reloj .hora p{
-  font-size: 13px;
+aside #anuncio .reloj .hora p{
+  font-size: 40px;
   background-color: #240b36;
   padding: 10px;
   margin: 0px 5px;

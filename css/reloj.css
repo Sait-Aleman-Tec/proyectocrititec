@@ -1,0 +1,6 @@
+aside h1 { color: rgb(240, 96, 13); font: bold 30px verdana; text-align: center; }
+aside h2 { color: navy; font: bold 20px verdana; text-align: center; }
+#elemento { width: 30%; float: center; text-align: center;}
+.a  { color: blue; }
+.v { color: green; }
+.c { color: purple; font-style: italic; }
