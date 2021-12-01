@@ -25,29 +25,29 @@
     <link rel="stylesheet" type="text/css" href="css/reloj.css" media="all">
 </head>
 
-<body bgcolor="#ffffff">
+<body bgcolor="#ffffff" onload="mostrarSaludo()">
 
 
     <header>
         <h1> CritiTec </h1>
-
     </header>
 
     <nav>
         <div id="menu">
             <ul>
+
                 <li class="nivel1"><a href="index.html" class="nivel1">Inicio</a></li>
 
                 <li class="nivel1"><a href="#" class="nivel1">Reseñas</a>
                     <ul>
-                        <li><a href="freefire.html">Free Fire</a></li>
+                        <li><a href="ark.html">ARK: Survival Evolved </a></li>
+                        <li><a href="riskofrain2.html">Risk of Rain 2</a></li>
                         <li><a href="pub.html">Pub G Mobile</a></li>
-                        <li><a href="riskofraink2.html">Risk of Raink 2</a></li>
                         <li><a href="pokemon.html">Pokemon Go</a></li>
                         <li><a href="cod.html">Call Of Duty Mobile</a></li>
-                        <li><a href="ark.html">ARK: Survival Evolved </a></li>
                         <li><a href="plantasvszombiesheroes.html">Plantas vs Zombies Heróes </a></li>
                         <li><a href="genshinimpact.html">Genshin Impact </a></li>
+                        <li><a href="freefire.html">Free Fire</a></li>
                     </ul>
                 </li>
 
@@ -60,8 +60,9 @@
 
                 <li class="nivel1"><a href="#" class="nivel1">Opiniones</a>
                     <ul>
-                        <li><a href="#">Top 5 mejores juegos para Oscar</a></li>
-                        <li><a href="#">Top 5 mejores juegos para Juan</a></li>
+                        <li><a href="#">Top 5 mejores juegos de Oscar</a></li>
+                        <li><a href="#">Top 5 mejores juegos de Juan</a></li>
+                        <li><a href="testimonios.html">Testimonios</a> </li>
                     </ul>
                 </li>
 
@@ -74,7 +75,6 @@
                 </li>
 
                 <li class="nivel1"><a href="formulario.html" class="nivel1">Iniciar Sesion</a></li>
-
             </ul>
         </div>
     </nav>
@@ -133,11 +133,64 @@
                 </p>
             </article>
 
+            <a href="cod.html">
+                <h3>Reseña: Call of Duty Mobile</h3>
+            </a>
+            <article>
+                <p>
+                    <center> <img src="images/COD.png" all="CoD"></center>
+                    Call of duty Mobile es uno de los mejores video juegos móviles que ha salido en la industria de los
+                    video juegos posicionándose
+                    entre los primeros lugares de los juegos más descargados en la play store.
+                    Algunos de los modos de juego que podrás encontrar son: Dominio, Buscar y Destruir, Duelo por
+                    equipos y
+                    Primera línea. Cada uno de estos modos...
+
+                </p>
+            </article>
+
         </section>
 
-        <!--Implementacion de reloj digital-->>
+        <aside>
+
+            <div id="anuncio">
+                <script>
+                    function mostrarSaludo() {
+                        fecha = new Date();
+                        hora = fecha.getHours();
+
+                        if (hora >= 0 && hora < 12) {
+                            texto = "Buenos Días";
+                            imagen = "images/dia.png";
+                        }
+
+                        if (hora >= 12 && hora < 18) {
+                            texto = "Buenas Tardes";
+                            imagen = "images/tarde.png";
+                        }
+
+                        if (hora >= 18 && hora < 24) {
+                            texto = "Buenas Noches";
+                            imagen = "images/noche.png"
+                        }
+
+                        document.images["tiempo"].src = imagen;
+                        document.getElementById('txtsaludo').innerHTML = texto;
+                    }
+                </script>
+                <div id="saludo">
+                    <center><img name="tiempo"></center><br>
+                    <center>
+                        <div id="txtsaludo"></div>
+                    </center>
+                </div>
+            </div>
+
+        </aside>
+
         <aside>
             <div id="anuncio">
+
                 <div class="reloj">
                     <p class="mes" id="mes">---</p>
                     <p class="dia" id="dia">---</p>
@@ -147,10 +200,14 @@
                         <p>00</p>
                     </div>
                 </div>
+
             </div>
+
         </aside>
 
-        <!--Implementacion de reloj analogico-->>
+
+
+
         <aside>
             <div id="anuncio">
                 <h1>Reloj</h1>
@@ -383,6 +440,7 @@
                                 </line>
                             </g>
 
+
                             <g id="minutos" transform='rotate(0)'>
                                 <line x1=0 y1=-25 x2=0 y2=55 stroke="navy" stroke-width=4>
                                     <animateTransform attributeType="XML" attributeName="transform" type="rotate"
@@ -391,6 +449,7 @@
                                     <line>
                             </g>
 
+
                             <g id="segundos" transform='rotate(0)'>
                                 <line x1=0 y1=-25 x2=0 y2=65 stroke="navy" stroke-width=2>
                                     <animateTransform attributeType="XML" attributeName="transform" type="rotate"
@@ -398,9 +457,11 @@
                                 </line>
                             </g>
 
+
                             <circle cx=0 cy=0 r=15 fill="url(#gr2)" stroke="#a05905" stroke-width="1" />
                         </g>
                     </svg>
+
 
                     <script type="text/javascript">
                         fecha = new Date(); //obtener la fecha
@@ -418,6 +479,7 @@
             </div>
         </aside>
 
+
         <aside>
             <div id="anuncio">
                 <h1>Campaña Para Salvar Ballenas</h1>
@@ -426,6 +488,8 @@
                 </p>
             </div>
         </aside>
+
+
 
         <footer>
             <p>Sitio Web desarrollado en conjunto para la asignatura de Programación Web.</p>
