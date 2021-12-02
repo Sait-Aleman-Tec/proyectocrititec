@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Crititec: Votaciones</title>
+  <meta charset="UTF-8" />
+  <!-- Bootstrap -->
+  <!-- https://www.bootstrapcdn.com/-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+  <meta name="keywords" content=" ARK, videojuegos, menú, acerca de, reseñas, criticas, 
+      opiniones, analisis, guion, escrito, graficos, historia, protagonista," />
+  <meta name="copyright" content=" Oscar Sait Aleman Rendon, Juan Eduardo Merino Hernández">
+  <meta name="author" content="Oscar Sait Aleman Rendon, oscarsait@hotmail.com, Juan Eduardo Merino Hernández" />
+  <meta http-equiv="refresh" content="1000">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta name="languaje" content="es">
+  <meta name="desription"
+    content="Pagina dedicada a la critica y reseña de videojuegos por parte de dos personas, 
+          con el tiempo se ira incluyendo mas material, ya sean reseñas, videos o incluso articulos de gran relevancia." />
+  <meta name="robots" content="Index" />
+  <meta http-equiv="expires" content="7200">
+  <meta name="robots" content="Index, Follow">
+  <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+  <link rel="icon" href="images/Logo.png" type="image/png" />
+  <link rel="stylesheet" type="text/css" href="css/estiloimg.css" media="all" />
+
+  <script type="text/javascript">
+    alert("Vota por la imagen que mas te guste :D");
+
+  </script>
+</head>
+
+<body bgcolor="#FFF177">
+  <header>
+    <h1> CritiTec </h1>
+  </header>
+
+  <nav>
+    <div id="menu">
+      <ul>
+
+        <li class="nivel1"><a href="index.html" class="nivel1">Inicio</a></li>
+
+        <li class="nivel1"><a href="#" class="nivel1">Reseñas</a>
+          <ul>
+            <li><a href="ark.html">ARK: Survival Evolved </a></li>
+            <li><a href="riskofrain2.html">Risk of Rain 2</a></li>
+            <li><a href="pub.html">Pub G Mobile</a></li>
+            <li><a href="pokemon.html">Pokemon Go</a></li>
+            <li><a href="cod.html">Call Of Duty Mobile</a></li>
+            <li><a href="plantasvszombiesheroes.html">Plantas vs Zombies Heróes </a></li>
+            <li><a href="genshinimpact.html">Genshin Impact </a></li>
+            <li><a href="freefire.html">Free Fire</a></li>
+          </ul>
+        </li>
+
+        <li class="nivel1"><a href="#" class="nivel1">Galeria</a>
+          <ul>
+            <li><a href="imagenes.html">Imagenes</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="betterimg.html">Votaciones</a></li>
+          </ul>
+        </li>
+
+        <li class="nivel1"><a href="#" class="nivel1">Opiniones</a>
+          <ul>
+            <li><a href="#">Top 5 mejores juegos de Oscar</a></li>
+            <li><a href="#">Top 5 mejores juegos de Juan</a></li>
+            <li><a href="testimonios.html">Testimonios</a> </li>
+          </ul>
+        </li>
+
+        <li class="nivel1"><a href="#" class="nivel1">Acerca de</a>
+          <ul>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="#">Donaciones</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="calificacion.html">Calificanos</a></li>
+          </ul>
+        </li>
+
+        <li class="nivel1"><a href="formulario.html" class="nivel1">Iniciar Sesion</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="py-5 text-center">
+      <h2 class="display-4">Captura del Mes</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4 order-md-1 mb-4">
+        <h4 style="font-weight: bold;">Lista de Juegos</h4>
+        <ul id="car-list" class="list-group mb-3"></ul>
+      </div>
+      <div class="col-md-8 order-md-2">
+        <div id="car">
+          <div class="row">
+            <h2 class="text-center display-4 font-weight-bold col" id="car-name"></h2>
+            <div class="text-center display-4 col">
+              <p>
+                Conteo de Votos:
+                <span id="car-count"></span>
+              </p>
+            </div>
+          </div>
+          <img style="width: 100%; margin: auto; border-radius: 5%; " id="car-img" src="" alt="games" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
