@@ -1,112 +1,114 @@
 <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <link rel="icon" href="images/favicon.png" type="image/png"/>
-        <title> ..:Crititec: Calificación::.. </title>
-        <meta charset="UTF-8"/>
-        <meta http-equiv="pragma" content="no-cache">
-        <meta name="keywords" content="html, css, js"> 
-        <meta name="author" content="Juan Eduardo Merino Hernández"> 
-        <link rel="icon" href="images/Logo.png" type="image/png" />
-        <link rel="stylesheet" type="text/css" href="css/estilo.css" media="all">
-        <script>
-            function promedioCalif(){
-                suma = 0;
-                total = 0;
+<html lang="es">
 
-                for (i=0; i<=document.calificaciones.elements.length; i++){
-                    ele = document.calificaciones.elements[i];
+<head>
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <title> ..:Crititec: Calificación::.. </title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="keywords" content="html, css, js">
+    <meta name="author" content="Juan Eduardo Merino Hernández">
+    <link rel="icon" href="images/Logo.png" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" media="all">
 
-                    if (ele.type=='text' && !isNaN(parseFloat(ele.value))){
-                        suma +=1;
-                        total += parseFloat(ele.value);
+    <script>
+        function promedioCalif() {
+            suma = 0;
+            total = 0;
 
-                    }
+            for (i = 0; i <= document.calificaciones.elements.length; i++) {
+                ele = document.calificaciones.elements[i];
 
-                    if (suma !=0){
-                        prom=total/suma;
-                        document.calificaciones.informe.value=prom;
-                    }
-                    else {
-                        document.calificaciones.informe.value=0;
-                    }
+                if (ele.type == 'text' && !isNaN(parseFloat(ele.value))) {
+                    suma += 1;
+                    total += parseFloat(ele.value);
+
                 }
 
+                if (suma != 0) {
+                    prom = total / suma;
+                    document.calificaciones.informe.value = prom;
+                }
+                else {
+                    document.calificaciones.informe.value = 0;
+                }
             }
-        </script>
 
-        
-        
-    </head>
+        }
+    </script>
 
-    <body>
 
-        <header>
-            <h1> CritiTec </h1>
-    
-        </header>
-    
-        <nav>
-            <div id="menu">
-                <ul>
-                    <li class="nivel1"><a href="index.html" class="nivel1">Inicio</a></li>
-    
-                    <li class="nivel1"><a href="#" class="nivel1">Reseñas</a>
-                        <ul>
-                            <li><a href="freefire.html">Free Fire</a></li>
-                            <li><a href="pub.html">Pub G Mobile</a></li>
-                            <li><a href="riskofraink2.html">Risk of Raink 2</a></li>
-                            <li><a href="pokemon.html">Pokemon Go</a></li>
-                            <li><a href="cod.html">Call Of Duty Mobile</a></li>
-                            <li><a href="ark.html">ARK: Survival Evolved </a></li>
-                            <li><a href="plantasvszombiesheroes.html">Plantas vs Zombies Heróes </a></li>
-                            <li><a href="genshinimpact.html">Genshin Impact </a></li>
-                        </ul>
-                    </li>
-    
-                    <li class="nivel1"><a href="#" class="nivel1">Galeria</a>
-                        <ul>
-                            <li><a href="imagenes.html">Imagenes</a></li>
-                            <li><a href="#">Videos</a></li>
-                        </ul>
-                    </li>
-    
-                    <li class="nivel1"><a href="#" class="nivel1">Opiniones</a>
-                        <ul>
-                            <li><a href="#">Top 5 mejores juegos para Oscar</a></li>
-                            <li><a href="#">Top 5 mejores juegos para Juan</a></li>
-                        </ul>
-                    </li>
-    
-                    <li class="nivel1"><a href="#" class="nivel1">Acerca de</a>
-                        <ul>
-                            <li><a href="contacto.html">Contacto</a></li>
-                            <li><a href="#">Donaciones</a></li>
-                            <li><a href="ubicacion.html">Ubicación</a></li>
-                        </ul>
-                    </li>
-    
-                    <li class="nivel1"><a href="formulario.html" class="nivel1">Iniciar Sesion</a></li>
-    
-                </ul>
-            </div>
-        </nav>
-        
 
-        <form class="form-register" name="calificaciones" method="post" action=""><br>
-            <h1>Califica nuestra clasificaión de Reseñas</h1><br>
-            Accion<input class="controls" type="text" name="nota1" size="4" maxlength="5"><br>
-            Terror<input class="controls" type="text" name="nota2" size="4" maxlength="5"><br>
-            Anime<input class="controls" type="text" name="nota3" size="4" maxlength="5"><br>
-            Suspenso<input class="controls" type="text" name="nota4" size="4" maxlength="5"><br>
-            
+</head>
 
-            Calificacion <input class="controls" type="text" name="informe" size="4" maxlength="5"><br>
-            <input class="bottons" type="button" name="Submit" value="Calcular Promedio" onclick="promedioCalif()"><br>
-            <input class="bottons" type="reset" name="Submit2" value="Limpiar"><br>
-             
+<body>
 
-        </form>
-    
-    </body>
+    <header>
+        <h1> CritiTec </h1>
+
+    </header>
+
+    <nav>
+        <div id="menu">
+            <ul>
+                <li class="nivel1"><a href="index.html" class="nivel1">Inicio</a></li>
+
+                <li class="nivel1"><a href="#" class="nivel1">Reseñas</a>
+                    <ul>
+                        <li><a href="freefire.html">Free Fire</a></li>
+                        <li><a href="pub.html">Pub G Mobile</a></li>
+                        <li><a href="riskofraink2.html">Risk of Raink 2</a></li>
+                        <li><a href="pokemon.html">Pokemon Go</a></li>
+                        <li><a href="cod.html">Call Of Duty Mobile</a></li>
+                        <li><a href="ark.html">ARK: Survival Evolved </a></li>
+                        <li><a href="plantasvszombiesheroes.html">Plantas vs Zombies Heróes </a></li>
+                        <li><a href="genshinimpact.html">Genshin Impact </a></li>
+                    </ul>
+                </li>
+
+                <li class="nivel1"><a href="#" class="nivel1">Galeria</a>
+                    <ul>
+                        <li><a href="imagenes.html">Imagenes</a></li>
+                        <li><a href="#">Videos</a></li>
+                    </ul>
+                </li>
+
+                <li class="nivel1"><a href="#" class="nivel1">Opiniones</a>
+                    <ul>
+                        <li><a href="#">Top 5 mejores juegos para Oscar</a></li>
+                        <li><a href="#">Top 5 mejores juegos para Juan</a></li>
+                    </ul>
+                </li>
+
+                <li class="nivel1"><a href="#" class="nivel1">Acerca de</a>
+                    <ul>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="#">Donaciones</a></li>
+                        <li><a href="ubicacion.html">Ubicación</a></li>
+                        <li><a href="calificacion.html">Calificanos</a></li>
+                    </ul>
+                </li>
+
+                <li class="nivel1"><a href="formulario.html" class="nivel1">Iniciar Sesion</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <form class="form-register" name="calificaciones" method="post" action=""><br>
+        <h1>¿Qué te parece nuestro contenido?</h1>
+        Reseñas<input class="controls" type="text" name="nota1" size="4" maxlength="5"><br>
+        Opiniones<input class="controls" type="text" name="nota2" size="4" maxlength="5"><br>
+        Críticas<input class="controls" type="text" name="nota3" size="4" maxlength="5"><br>
+        Análisis<input class="controls" type="text" name="nota4" size="4" maxlength="5"><br>
+
+
+        Calificacion <input class="controls" type="text" name="informe" size="4" maxlength="5"><br>
+        <input class="bottons" type="button" name="Submit" value="Calcular Promedio" onclick="promedioCalif()"><br>
+        <input class="bottons" type="reset" name="Submit2" value="Limpiar"><br>
+    </form>
+
+</body>
+
 </html>

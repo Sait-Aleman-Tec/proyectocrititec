@@ -7,8 +7,10 @@ Creado en binas por Oscar Sait Aleman Rendon y Juan Eduardo Merino Hernández
 
 ---------------------------------------------------------
 
-Parch notes: Implementacion de relojes en Index mediante .JS y de la ubicacion en 
-"ubicacion.html" por .JS
+Parch notes: 
+1._ Implementación de una funcion de calificar en el apartado "calificanos" 
+que se localiza en el menu o en el archivo 'calificacion'.
+2._ Correccion de bugs.
 
 ---------------------------------------------------------
 
